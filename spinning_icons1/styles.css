@@ -1,0 +1,59 @@
+@keyframes slideleft {
+  from {
+    transform: translateX(0) rotate(0deg);
+      
+  }
+  to {
+    transform: translateX(200px) rotate(360deg);
+      }
+}
+
+
+@keyframes slideright {
+  from {
+    transform: translateX(0) rotate(0deg);
+  }
+  to {
+    transform: translateX(-200px) rotate(-360deg);
+  }
+}
+.iconR {
+  animation: slideright 1.5s infinite;
+}
+
+.icon {
+  animation: slideleft 1.5s infinite;
+}
+
+@keyframes slideleft1 {
+  from {
+    transform: translateX(200px) rotate(360deg);
+      
+  }
+  to {
+    transform: translateX(0) rotate(0deg);
+      }
+}
+
+
+@keyframes slideright1 {
+  from {
+    transform: translateX(-200px) rotate(-360deg);
+  }
+  to {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+.iconR {
+  animation: slideright 4s infinite;
+  animation-direction: alternate;
+}
+
+.icon {
+  animation: slideleft 4s infinite;
+  animation-direction: alternate;
+}
+
+body {
+  background-color: red;
+}
