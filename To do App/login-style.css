@@ -1,0 +1,89 @@
+/* Body */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: #1a1a1a url('https://i.imgur.com/8Q2XkOt.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #d1d1b8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+/* Container */
+.login-container {
+    background: rgba(30, 30, 30, 0.85);
+    border: 2px solid #5a5a36;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00ff66;
+    width: 320px;
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00ff66;
+    text-shadow: 0 0 5px #00ff66;
+}
+
+/* Inputs & buttons same width */
+form input,
+form button,
+.switchBtn {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #5a5a36;
+    font-family: 'Courier New', monospace;
+}
+
+/* Inputs */
+form input {
+    background: #2e2b1f;
+    color: #d1d1b8;
+    outline: none;
+}
+
+form input:focus {
+    border: 1px solid #00ff66;
+    box-shadow: 0 0 8px #00ff66;
+}
+
+/* Buttons */
+form button,
+.switchBtn {
+    background: #3a3724;
+    color: #00ff66;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 0 3px #00ff66;
+    transition: 0.2s;
+}
+
+form button:hover,
+.switchBtn:hover {
+    background: #4b462b;
+    box-shadow: 0 0 10px #00ff66;
+}
+
+/* Error messages */
+.errorMsg {
+    color: #ff4c4c;
+    text-align: center;
+    display: none;
+    margin-top: 5px;
+}
+
+/* Divider */
+hr {
+    border: none;
+    border-top: 1px solid #5a5a36;
+    margin: 20px 0;
+}

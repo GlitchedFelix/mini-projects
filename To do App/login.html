@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register - To-Do List</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>Welcome</h1>
+
+        <!-- Login Form -->
+        <form id="loginForm">
+            <input type="text" id="loginUsername" placeholder="Username" autocomplete="off" required>
+            <input type="password" id="loginPassword" placeholder="Password" autocomplete="off" required>
+            <button type="submit">Login</button>
+            <p id="loginError" class="errorMsg"></p>
+        </form>
+
+        <!-- Show register button -->
+        <button id="showRegisterBtn" class="switchBtn">Create Account</button>
+
+        <hr style="margin:20px 0; border-color:#555;">
+
+        <!-- Register Form (hidden initially) -->
+        <form id="registerForm" style="display:none;">
+            <input type="text" id="regUsername" placeholder="New Username" autocomplete="off" required>
+            <input type="password" id="regPassword" placeholder="New Password" autocomplete="off" required>
+            <button type="submit">Create Account</button>
+            <button type="button" id="backToLoginBtn" class="switchBtn">Back to Login</button>
+            <p id="registerMsg" class="errorMsg"></p>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

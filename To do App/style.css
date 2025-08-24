@@ -1,0 +1,136 @@
+/* Body */
+body {
+    font-family: 'Courier New', monospace;
+    background: #1a1a1a url('https://i.imgur.com/8Q2XkOt.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #d1d1b8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Input Container (fixed at top-left) */
+.input-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    display: flex;
+    gap: 10px;
+    z-index: 100;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #5a5a36;
+    background: #2e2b1f;
+    color: #d1d1b8;
+    outline: none;
+}
+
+.input-container input:focus {
+    border: 1px solid #00ff66;
+    box-shadow: 0 0 8px #00ff66;
+}
+
+.input-container button {
+    background: #3a3724;
+    color: #00ff66;
+    border: 1px solid #5a5a36;
+    border-radius: 5px;
+    padding: 12px;
+    cursor: pointer;
+    text-shadow: 0 0 3px #00ff66;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.input-container button:hover {
+    background: #4b462b;
+    box-shadow: 0 0 10px #00ff66;
+}
+
+/* Task List */
+.task-list {
+    margin-left: 350px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Task Card */
+.task-card {
+    background: #2e2b1f;
+    border: 2px solid #5a5a36;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 0 10px #00ff66;
+    word-break: break-word;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Task text container */
+.task-text {
+    flex: 1;
+    margin-right: 10px;
+    word-break: break-word;
+}
+
+/* Task Card Buttons - fixed size and aligned right */
+.task-card .completeBtn {
+    background: #3a3724;
+    color: #00ff66;
+    border: 1px solid #5a5a36;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    text-shadow: 0 0 3px #00ff66;
+    transition: 0.2s;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+/* Small spacing between buttons */
+.task-card .completeBtn+.completeBtn {
+    margin-left: 3px;
+}
+
+.task-card .completeBtn:hover {
+    background: #4b462b;
+    box-shadow: 0 0 10px #00ff66;
+}
+
+/* Completed Task */
+.completed {
+    color: #888888;
+    text-decoration: line-through;
+}
+
+/* Logout Button */
+#logoutBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #3a3724;
+    color: #00ff66;
+    border: 1px solid #5a5a36;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: 0 0 3px #00ff66;
+    transition: 0.2s;
+}
+
+#logoutBtn:hover {
+    background: #4b462b;
+    box-shadow: 0 0 10px #00ff66;
+}
